@@ -1,4 +1,4 @@
-# Url Hit Counter
+# Route Hit Counter
 
 Package Repository Website for Composer, see the
 [about page](https://packagist.org/about) on
@@ -11,15 +11,15 @@ Package Repository Website for Composer, see the
 
 1. Clone the repository
    ```bash
-   composer require silent-revenger/url-hit-counter
+   composer require silent-revenger/route-hit-counter
    ```
 2. Start the web server:
    ```bash
-   php artisan vendor:publish --tag=config-publish
+   php artisan vendor:publish --tag=route-hit-counter
    ```
 You should now be able to access counter view.
 
-3. Follow the below url to show counter detais:
+3. Follow the below url to show counter details:
    ```bash
     http::\\YOUR_URL/route-hit-counter
    ```

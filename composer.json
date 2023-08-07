@@ -1,11 +1,11 @@
 {
-    "name": "silent-revenger/url-hit-counter",
+    "name": "silent-revenger/route-hit-counter",
     "description": "Create a list that provides a counter value for each route in your Laravel project. This list will indicate how many times each of your URLs has been accessed.",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Riseuplabs\\UrlHitCounter\\": "src/"
+            "Riseuplabs\\RouteHitCounter\\": "src/"
         }
     },
     "authors": [
@@ -18,7 +18,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Riseuplabs\\UrlHitCounter\\UrlHitCounterServiceProvider"
+                "Riseuplabs\\RouteHitCounter\\RouteHitCounterServiceProvider"
             ]
         }
     }

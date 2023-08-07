@@ -1,23 +1,27 @@
 <?php
 
-namespace Riseuplabs\UrlHitCounter\Http\Controllers;
+namespace Riseuplabs\RouteHitCounter\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\File;
 
-class RouteHitCounterController extends Controller{
-    
-    public function index(){
+class RouteHitCounterController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\JsonResponse|mixed
+     */
+    public function index()
+    {
+        $todayFileName = sprintf('route_hit_counter_%s.json', date('Y-m-d'));
+        $filePath = sprintf('%s/%s', storage_path('route_hit_log'), $todayFileName);
 
-        $date = Carbon::today()->format('Y-m-d');
-        $todayFileName = 'route_hit_counter'.'_'.$date.'.json';
-        $filePath = storage_path('route_hit_log/'.$todayFileName);
-           
         if (File::exists($filePath)) {
-            return response()->json(json_decode(file_get_contents($filePath)), 200);
-        } else {
-            return response()->json(['error' => 'File not found'], 404);
+            $contents = json_decode(file_get_contents($filePath));
+            return response()->json($contents);
         }
+
+        return response()->json(['error' => 'File not found'], 404);
     }
 }
