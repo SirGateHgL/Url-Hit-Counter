@@ -16,10 +16,11 @@ class RouteHitCounterController extends Controller
     {
         $todayFileName = sprintf('route_hit_counter_%s.json', date('Y-m-d'));
         $filePath = sprintf('%s/%s', storage_path('route_hit_log'), $todayFileName);
-
+        
         if (File::exists($filePath)) {
             $contents = json_decode(file_get_contents($filePath));
-            return response()->json($contents);
+            return view("view::index", compact('contents'));
+            // return response()->json($contents);
         }
 
         return response()->json(['error' => 'File not found'], 404);

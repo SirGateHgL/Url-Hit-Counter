@@ -1,5 +1,5 @@
 {
-    "name": "silent-revenger/route-hit-counter",
+    "name": "riseuplabs/route-hit-counter",
     "description": "Create a list that provides a counter value for each route in your Laravel project. This list will indicate how many times each of your URLs has been accessed.",
     "type": "library",
     "license": "MIT",
@@ -10,8 +10,12 @@
     },
     "authors": [
         {
-            "name": "arafat.r.riseuplabs",
-            "email": "arafat.r.riseuplabs@gmail.com"
+            "name": "arafatuu",
+            "email": "atrahmanbd5@gmail.com"
+        },
+        {
+            "name": "abuhasanshadhin",
+            "email": "abuhasanshadhin@gmail.com"
         }
     ],
     "require": {},

@@ -20,6 +20,9 @@ class RouteHitCounterServiceProvider extends ServiceProvider
             __DIR__ . '/config/route_hit_counter.php' => config_path('route_hit_counter.php'),
         ], 'route-hit-counter');
 
+        $this->loadViewsFrom(__DIR__ . '/views', 'view');
+
+
         $middlewares = config('route_hit_counter.middleware', []);
 
         foreach ($middlewares as $middleware) {

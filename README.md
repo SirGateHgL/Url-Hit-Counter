@@ -9,11 +9,11 @@ Package Repository Website for Composer, see the
 
 ### Installation
 
-1. Clone the repository
+1. Install package
    ```bash
    composer require silent-revenger/route-hit-counter
    ```
-2. Start the web server:
+2. Publish tag:
    ```bash
    php artisan vendor:publish --tag=route-hit-counter
    ```
