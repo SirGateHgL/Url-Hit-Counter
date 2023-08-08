@@ -22,7 +22,7 @@
             ]
         }
     },
-    "minimum-stability": "1.0.1",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "version": "1.0.2"
 }
