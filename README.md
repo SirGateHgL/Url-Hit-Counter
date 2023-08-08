@@ -21,7 +21,7 @@ You should now be able to access counter view.
 
 3. Follow the below url to show counter details:
    ```bash
-    http::\\YOUR_URL/route-hit-counter
+    http::\\BASE_URL/route-hit-counter
    ```
 
 
