@@ -21,6 +21,6 @@
                 "Riseuplabs\\RouteHitCounter\\RouteHitCounterServiceProvider"
             ]
         }
-    },
-    "minimum-stability": "dev"
+    }
+    
 }
