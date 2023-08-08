@@ -23,5 +23,6 @@
         }
     },
     "minimum-stability": "1.0.1",
+    "prefer-stable": true,
     "version": "1.0.2"
 }
